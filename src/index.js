@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
+// import StateFullComponent from './container/HelloContainer';
+// import Product from './container/Products/ProductContainer';
+import Lifecyclecle from './container/Lifecycle/Lifecycle';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+  <p>Lifecycle</p>
+    <hr/>
+    <Lifecyclecle></Lifecyclecle>
+  </div>
+   ,
   document.getElementById('root')
 );
 
