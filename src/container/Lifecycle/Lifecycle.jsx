@@ -18,18 +18,24 @@ class Lifecycle extends Component {
   }
 
   componentDidMount() {
+    // setTimeout(() => {
+    //   this.setState({
+    //     count: 2
+    //   })
+    // }, 3000)
     console.log('componentDidMount')
 
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-
     console.log('shouldComponentUpdate')
+    return true
 
   }
 
   getSnapshotBeforeUpdate(prevProps, prevState) {
     console.log('getSnapshotBeforeUpdate')
+    return null
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
@@ -40,12 +46,25 @@ class Lifecycle extends Component {
     console.log('componentWillUnmount')
   }
 
+  onChangeClick = () => {
+    this.setState({
+      count: this.state.count + 1
+    })
+  }
 
+  changeBackground = (e, v) => {
+    e.target.style.background = v;
+  }
 
   render() {
     console.log('render')
+
     return (
-      <button className="btn"> Lifecycle Component {this.state.count}</button>
+      <button className="btn" 
+      
+      onMouseOver={(v)=>this.changeBackground(v, "red")}  
+      
+      onMouseLeave={(v)=>this.changeBackground(v, "blue")} onClick={this.onChangeClick}> Lifecycle Component - {this.state.count}</button>
     )
   }
 }

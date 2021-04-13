@@ -2,17 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import reportWebVitals from './reportWebVitals';
-// import StateFullComponent from './container/HelloContainer';
+import StateFullComponent from './container/HelloContainer';
 // import Product from './container/Products/ProductContainer';
-import Lifecyclecle from './container/Lifecycle/Lifecycle';
+// import Lifecyclecle from './container/Lifecycle/Lifecycle';
+
 
 
 ReactDOM.render(
-  <div>
-  <p>Lifecycle</p>
-    <hr/>
-    <Lifecyclecle></Lifecyclecle>
-  </div>
+  <StateFullComponent/>
    ,
   document.getElementById('root')
 );
