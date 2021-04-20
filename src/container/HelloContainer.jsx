@@ -1,7 +1,8 @@
 import React from 'react'
+import BlogPost from './BlogPost/BlogPost'
 // import YoutubeComponent from '../components/YoutubeComp/YoutubeComponent'
 import './HelloContainer.css'
-import Lifecycle from './Lifecycle/Lifecycle'
+// import Lifecycle from './Lifecycle/Lifecycle'
 class StateFullComponent extends React.Component {
 
   constructor(props) {
@@ -25,13 +26,15 @@ class StateFullComponent extends React.Component {
 
   render() {
     return (
-      <div>
-      <p>Lifecycle</p>
-        <hr/>
-        {
-          this.state.showComponent ? <Lifecycle/> : null
-        }
-      </div>
+      <BlogPost/>
+
+      // <div>
+      // <p>Lifecycle</p>
+      //   <hr/>
+      //   {
+      //     this.state.showComponent ? <Lifecycle/> : null
+      //   }
+      // </div>
       // <div className="wrapper">
       // <YoutubeComponent title="image ABC" link="https://picsum.photos/id/237/200/300"/>
       // <YoutubeComponent title="image A12" link="https://picsum.photos/200/300?grayscale"/>
