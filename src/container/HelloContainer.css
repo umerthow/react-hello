@@ -1,6 +1,6 @@
 p {
   font-weight: 200;
-  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .text-p {
@@ -13,4 +13,19 @@ body {
 
 .wrapper {
   display: inline-block;
+}
+
+.navigation {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(75, 59, 36);
+  padding: 30px;
+}
+
+.navigation a {
+  text-decoration: none;
+  padding: 10px 40px;
+  margin: 10px;
+  color: rgb(15, 17, 17);
+  border-radius: 4px; 
+  background-color: chartreuse;
 }

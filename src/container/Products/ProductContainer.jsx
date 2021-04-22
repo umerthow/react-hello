@@ -19,6 +19,8 @@ class Product extends Component {
   render() {
     return ( 
       <Fragment>
+      <p>Product</p>
+      <hr/>
       <div className="header">
         <div className="logo">
           <img src="https://picsum.photos/400/10?grayscale" alt=""></img>

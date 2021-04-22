@@ -63,6 +63,8 @@ class BlogPost extends Component {
   render() {
     return(
       <Fragment>
+      <p>Blog Post</p>
+      <hr/>
       <p className="section-title">Blog Post</p>
         {
           this.state.post.map(post => {
